@@ -57,6 +57,15 @@
         .main-content {
             margin-top: 60px; /* Space for fixed navbar */
         }
+        /* Additional styling for image spacing */
+        .image-row {
+            display: flex;
+            justify-content: center; /* Center the images */
+            margin-top: 20px; /* Space above the image row */
+        }
+        .image-row img {
+            margin: 0 15px; /* Add margin to the sides of images */
+        }
     </style>
 </head>
 <body>
@@ -74,12 +83,12 @@
             <p>We operate beyond borders. Our reach is global. Can you find us?</p>
             <div class="info">
                 <!-- Centered Image -->
-                <img src="image1.jpg" alt="Centered Image" class="centered-image">
-
+                <img src="image1.jpg" alt="Centered Image" class="centered-image" width="400" height="300">
+                <br/>
                 <!-- Row of Two Images Below -->
                 <div class="image-row">
-                    <img src="image2.jpg" alt="Image 1">
-                    <img src="image3.jpg" alt="Image 2">
+                    <img src="image2.jpg" alt="Image 1" width="500" height="250">
+                    <img src="image3.jpg" alt="Image 2" width="500" height="250">
                 </div>
             </div>
 
