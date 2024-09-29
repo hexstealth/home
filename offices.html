@@ -3,87 +3,251 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Office Locations</title>
+    <title>Cartel Offices</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
+            background-color: #111;
+            color: #eee;
+            text-align: center;
+            padding: 50px;
         }
         h1 {
-            text-align: center;
+            color: #e74c3c;
         }
-        table {
+        .content {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        .info {
+            margin-top: 20px;
+            color: #ccc;
+        }
+        a {
+            color: #1abc9c;
+        }
+        /* Navbar Styling */
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            top: 0;
             width: 100%;
-            margin: 0 auto;
-            border-collapse: collapse;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 10px 0;
         }
-        th, td {
-            padding: 12px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
         }
-        th {
-            background-color: #4CAF50;
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .navbar a.active {
+            background-color: #e74c3c;
             color: white;
         }
-        tr:hover {
-            background-color: #f5f5f5;
+        .main-content {
+            margin-top: 60px; /* Space for fixed navbar */
         }
-        .container {
-            max-width: 1000px;
-            margin: auto;
-            padding: 20px;
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #555;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #444;
+            color: #fff;
+        }
+        tr:nth-child(even) {
+            background-color: #222;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Cartel Office Locations</h1>
-        <table>
-            <thead>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a class="active" href="offices.html">Offices</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+    </div>
+
+    <div class="main-content">
+        <div class="content">
+            <h1>Our Offices</h1>
+            <p>We have a presence across Europe. Here are our locations:</p>
+            <table>
                 <tr>
                     <th>Country</th>
                     <th>Latitude</th>
                     <th>Longitude</th>
                 </tr>
-            </thead>
-            <tbody>
-                <tr><td>France</td><td>43.65136</td><td>0.74238</td></tr>
-                <tr><td>Germany</td><td>48.56011</td><td>14.30864</td></tr>
-                <tr><td>Italy</td><td>46.95257</td><td>16.41326</td></tr>
-                <tr><td>Spain</td><td>38.1808</td><td>-6.25161</td></tr>
-                <tr><td>United Kingdom</td><td>59.0324</td><td>-2.07581</td></tr>
-                <tr><td>Netherlands</td><td>51.80559</td><td>4.9399</td></tr>
-                <tr><td>Belgium</td><td>50.77361</td><td>3.06353</td></tr>
-                <tr><td>Austria</td><td>46.87778</td><td>16.54628</td></tr>
-                <tr><td>Switzerland</td><td>46.43905</td><td>7.74657</td></tr>
-                <tr><td>Greece</td><td>36.55161</td><td>26.32058</td></tr>
-                <tr><td>Portugal</td><td>37.44638</td><td>-7.8421</td></tr>
-                <tr><td>Sweden</td><td>62.8351</td><td>14.94838</td></tr>
-                <tr><td>Norway</td><td>62.62504</td><td>11.85717</td></tr>
-                <tr><td>Denmark</td><td>55.07612</td><td>10.26933</td></tr>
-                <tr><td>Poland</td><td>54.31756</td><td>22.09889</td></tr>
-                <tr><td>Czech Republic</td><td>49.30993</td><td>14.88861</td></tr>
-                <tr><td>Hungary</td><td>47.59308</td><td>17.97457</td></tr>
-                <tr><td>Romania</td><td>44.44217</td><td>26.0948</td></tr>
-                <tr><td>Bulgaria</td><td>41.5737</td><td>23.24244</td></tr>
-                <tr><td>Ireland</td><td>53.52516</td><td>-7.02632</td></tr>
-                <tr><td>Finland</td><td>68.25878</td><td>28.51036</td></tr>
-                <tr><td>Iceland</td><td>65.14264</td><td>-17.12756</td></tr>
-                <tr><td>Croatia</td><td>43.66154</td><td>15.5209</td></tr>
-                <tr><td>Slovakia</td><td>48.87716</td><td>20.59896</td></tr>
-                <tr><td>Serbia</td><td>44.38961</td><td>19.29971</td></tr>
-                <tr><td>Slovenia</td><td>46.16383</td><td>15.01895</td></tr>
-                <tr><td>Estonia</td><td>59.3417</td><td>26.82164</td></tr>
-                <tr><td>Latvia</td><td>56.73827</td><td>27.02063</td></tr>
-                <tr><td>Lithuania</td><td>54.94197</td><td>25.08413</td></tr>
-                <tr><td>Ukraine</td><td>49.36705</td><td>35.35705</td></tr>
-            </tbody>
-        </table>
+                <tr>
+                    <td>France</td>
+                    <td>43.65136</td>
+                    <td>0.74238</td>
+                </tr>
+                <tr>
+                    <td>Germany</td>
+                    <td>48.56011</td>
+                    <td>14.30864</td>
+                </tr>
+                <tr>
+                    <td>Italy</td>
+                    <td>46.95257</td>
+                    <td>16.41326</td>
+                </tr>
+                <tr>
+                    <td>Spain</td>
+                    <td>38.1808</td>
+                    <td>-6.25161</td>
+                </tr>
+                <tr>
+                    <td>United Kingdom</td>
+                    <td>59.0324</td>
+                    <td>-2.07581</td>
+                </tr>
+                <tr>
+                    <td>Netherlands</td>
+                    <td>51.80559</td>
+                    <td>4.9399</td>
+                </tr>
+                <tr>
+                    <td>Belgium</td>
+                    <td>50.77361</td>
+                    <td>3.06353</td>
+                </tr>
+                <tr>
+                    <td>Austria</td>
+                    <td>46.87778</td>
+                    <td>16.54628</td>
+                </tr>
+                <tr>
+                    <td>Switzerland</td>
+                    <td>46.43905</td>
+                    <td>7.74657</td>
+                </tr>
+                <tr>
+                    <td>Greece</td>
+                    <td>36.55161</td>
+                    <td>26.32058</td>
+                </tr>
+                <tr>
+                    <td>Portugal</td>
+                    <td>37.44638</td>
+                    <td>-7.8421</td>
+                </tr>
+                <tr>
+                    <td>Sweden</td>
+                    <td>62.8351</td>
+                    <td>14.94838</td>
+                </tr>
+                <tr>
+                    <td>Norway</td>
+                    <td>62.62504</td>
+                    <td>11.85717</td>
+                </tr>
+                <tr>
+                    <td>Denmark</td>
+                    <td>55.07612</td>
+                    <td>10.26933</td>
+                </tr>
+                <tr>
+                    <td>Poland</td>
+                    <td>54.31756</td>
+                    <td>22.09889</td>
+                </tr>
+                <tr>
+                    <td>Czech Republic</td>
+                    <td>49.30993</td>
+                    <td>14.88861</td>
+                </tr>
+                <tr>
+                    <td>Hungary</td>
+                    <td>47.59308</td>
+                    <td>17.97457</td>
+                </tr>
+                <tr>
+                    <td>Romania</td>
+                    <td>44.44217</td>
+                    <td>26.0948</td>
+                </tr>
+                <tr>
+                    <td>Bulgaria</td>
+                    <td>41.5737</td>
+                    <td>23.24244</td>
+                </tr>
+                <tr>
+                    <td>Ireland</td>
+                    <td>53.52516</td>
+                    <td>-7.02632</td>
+                </tr>
+                <tr>
+                    <td>Finland</td>
+                    <td>68.25878</td>
+                    <td>28.51036</td>
+                </tr>
+                <tr>
+                    <td>Iceland</td>
+                    <td>65.14264</td>
+                    <td>-17.12756</td>
+                </tr>
+                <tr>
+                    <td>Croatia</td>
+                    <td>43.66154</td>
+                    <td>15.5209</td>
+                </tr>
+                <tr>
+                    <td>Slovakia</td>
+                    <td>48.87716</td>
+                    <td>20.59896</td>
+                </tr>
+                <tr>
+                    <td>Serbia</td>
+                    <td>44.38961</td>
+                    <td>19.29971</td>
+                </tr>
+                <tr>
+                    <td>Slovenia</td>
+                    <td>46.16383</td>
+                    <td>15.01895</td>
+                </tr>
+                <tr>
+                    <td>Estonia</td>
+                    <td>59.3417</td>
+                    <td>26.82164</td>
+                </tr>
+                <tr>
+                    <td>Latvia</td>
+                    <td>56.73827</td>
+                    <td>27.02063</td>
+                </tr>
+                <tr>
+                    <td>Lithuania</td>
+                    <td>54.94197</td>
+                    <td>25.08413</td>
+                </tr>
+                <tr>
+                    <td>Ukraine</td>
+                    <td>49.36705</td>
+                    <td>35.35705</td>
+                </tr>
+            </table>
+        </div>
     </div>
+
 </body>
 </html>
